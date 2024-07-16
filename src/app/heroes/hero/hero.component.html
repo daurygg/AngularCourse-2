@@ -11,9 +11,9 @@
   <dd>{{Method()}}</dd>
 
   <td>Capitalizado:</td>
-  <dd> {{ nombrecapitalizado() }} </dd>
+  <dd> {{ getHeroDescription }} </dd>
 </dl>
 
 
-<button (click)="changeHero()" class="btn btn-primary mx-2">Cambiar Nombre</button>
+<button *ngIf="true" (click)="changeHero()" class="btn btn-primary mx-2">Cambiar Nombre</button>
 <button (click)="changeAge()" class="btn btn-primary">Cambiar Edad</button>

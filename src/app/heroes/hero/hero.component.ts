@@ -10,7 +10,7 @@ export class HeroComponent {
   public age: number = 45;
 
 
-  changeName(): void{
+  changeHero(): void{
     this.name = "Spiderman";
   }
   changeAge(): void{
@@ -19,7 +19,7 @@ export class HeroComponent {
   Method(): string{
     return `${this.name}-${this.age}`
   }
-  nombrecapitalizado(): string{
+  get getHeroDescription(): string{
     return `${this.name.toUpperCase()}`
   }
 
